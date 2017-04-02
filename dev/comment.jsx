@@ -7,8 +7,7 @@ class CommentBox extends React.Component {
 		this.state = {
 			showComments:false,
 			comments:[
-				{id: 1, author: "Jingyi", body: "PANG NUINUI"},
-        		{id: 2, author: "Kang", body: "PI KA SHI"}
+				{id: 1, author: "Kang", body: "Good Job!"}
 			]
 		};
 	}

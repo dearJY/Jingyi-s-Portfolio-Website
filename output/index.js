@@ -9787,7 +9787,7 @@ var CommentBox = function (_React$Component) {
 
 		_this.state = {
 			showComments: false,
-			comments: [{ id: 1, author: "Jingyi", body: "PANG NUINUI" }, { id: 2, author: "Kang", body: "PI KA SHI" }]
+			comments: [{ id: 1, author: "Kang", body: "Good Job!" }]
 		};
 		return _this;
 	}

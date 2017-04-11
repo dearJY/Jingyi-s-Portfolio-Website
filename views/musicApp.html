@@ -26,12 +26,14 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!--AOS/animation on scroll-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
 </head>
 
@@ -72,12 +74,15 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container ocean">
+            <div id="wave3" class="waveBox"></div>
+            <div id="wave2" class="waveBox"></div>
+            <div id="wave1" class="waveBox"></div>
             <div class="row">
                 <div class="col-lg-12">
                     <!--img class="img-responsive" src="img/profile.png" alt=""-->
                     <div class="col-sm-1"></div>
-                    <div class="col-sm-8 hello">
+                    <div class="col-sm-8 hello animated pulse">
                         <h1 class="intro-hob">music app - wireframe</h1>
                         <hr>
                         <h2 class="intro work">&nbsp &nbsp &nbsp a music app with optmized layout and features</h2>
@@ -91,15 +96,15 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center" data-aos="fade-down">
                     <h2 id="design">Design Process</h2>
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">Interviews</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process">What kind of music app do users really want? <b>Interviewing music apps users and observing how they use 
                         music apps</b> is the most direct way to find users' needs. Our group interviewed 9 people who regularly 
                         liten to music through their mobile phones. They showed us what they liked and disliked in different
@@ -107,10 +112,10 @@
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">Comparisons</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process">Analyzing results of all the interviews, we <b>classified all the user scenarios into three groups</b> - "Create Playlist", "Manage Playlist" and "other activities". We chose several music apps including Spotify, SoundCloud, 
                     Google Play Music, Microsoft Groove, Apple Music and Deezer to <b>compare their functionalities in three scenario groups above</b>. During this process we got to know strength and weakness of many music apps, which were important 
                     resource of our redesign.
@@ -118,19 +123,19 @@
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">Competitive analysis</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process">Main page and Genres are essential parts of a music app because users use them most often. We chose three apps(Spotify, SoundCloud and Google Play Music) and <b>drew the hierarchical sitemaps of their main pages and genres</b>. In this way, we knew how different layouts work and what aspects can be optimized.
                     </p>
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">Wireframe</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process">
                         According to the results of interviews, comparisons and competitive analysis, we <b>sketched out each page of 
                         our music app</b>. Using the sketch to going through workflow of each user scenario helped us revise our design. 
@@ -222,17 +227,17 @@
                         <h3>CONTACT</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-facebook fa-lg"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100010527720480" target="_blank" class="btn-social btn-outline"><i class="fa fa-facebook fa-lg"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-github fa-lg"></i></a>
+                                <a href="https://github.com/dearJY" target="_blank" class="btn-social btn-outline"><i class="fa fa-github fa-lg"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-linkedin fa-lg"></i></a>
+                                <a href="https://www.linkedin.com/in/jingyi-ouyang-a74a1311a/" target="_blank" class="btn-social btn-outline"><i class="fa fa-linkedin fa-lg"></i></a>
                             </li>
                         
                         </ul>
-                        <h3 id="email">j3ouyang@ucsd.edu</h3>
+                        <h3 id="email">jingyi1617@gmail.com</h3>
                     </div>
                 </div>
             </div>
@@ -241,7 +246,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; OYJY Website 2016
+                        Copyright &copy; OYJY Website 2017
                     </div>
                 </div>
             </div>
@@ -265,6 +270,13 @@
     <!--React-->
     <script src="../output/index.js"></script>
     
+    <!--AOS/animation on scroll-->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+    <script src="../output/header.js"></script>
 </body>
 
 </html>

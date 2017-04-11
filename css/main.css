@@ -17,8 +17,8 @@ p.small {
 a,
 a:hover,
 a:focus,
-a:active,
-a.active {
+/*a:active,
+a.active*/ {
   color: #D68097;
   outline: none;
 }
@@ -432,7 +432,7 @@ footer .footer-below {
   /*border-top-style:solid;
   border-top-color:white;*/
 }
-.btn-outline {
+.btn-outline:visited{
   color:#294353;
   font-size: 30px;
   border: solid 2px transparent;
@@ -441,7 +441,7 @@ footer .footer-below {
   margin-top: 15px;
 }
 .btn-outline:hover,
-.btn-outline:focus,
+/*.btn-outline:focus,*/
 .btn-outline:active,
 .btn-outline.active {
   color: #D68097;
@@ -533,7 +533,8 @@ fieldset[disabled] .btn-success.active {
   color: #D68097;
   background-color: white;
 }*/
-.btn-social {
+.btn-social
+/*.btn-outline:link*/{
   display: inline-block;
   height: 50px;
   width: 50px;
@@ -813,3 +814,137 @@ section.comment {
 .comment .comment-amount a i {
   padding-left:5%;
 }
+
+/*header animation*/
+.ocean {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.waveBox {
+  width: 900px;
+  height: 1000px;
+  border-radius: 100%;
+  position: absolute;
+  animation: waver 5s .1s infinite linear;
+  background-color: #D9EBF0;
+  /*opacity: .8;*/
+  left: 400px;
+  top: 500px;
+  transform-origin: center, center;
+}
+
+@keyframes waver {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#waveOne {
+  background-color: #D9EBF0;
+  opacity: .5;
+  left:-400px;
+  animation: waver 3s 0.2s infinite linear;
+  top:320px;
+}
+
+#waveTwo {
+  background-color: #D9EBF0;
+  opacity: .5;
+  left:-80px;
+  animation: waver 4s 0.4s infinite linear;
+  top:450px;
+}
+
+#waveThree {
+  background-color:#ffffcc;
+  opacity: .3;
+  left: 500px;
+  animation: waver 3s 0.8s infinite linear;
+  top:550px;
+}
+
+#waveFour {
+  background-color:#e6ffe6;
+  opacity: .5;
+  left: 200px;
+  animation: waver 3s 0.6s infinite linear;
+  top:520px;
+}
+
+#waveFive {
+  background-color:#D9EBF0;
+  opacity: .5;
+  left: 240px;
+  animation: waver 4s 1.6s infinite linear;
+}
+
+#waveSix {
+  background-color:#D9EBF0;
+  opacity: .5;
+  left: 400px;
+  animation: waver 5s 1.2s infinite linear;
+}
+
+#waveSeven {
+  background-color:#ffffcc;
+  opacity: .3;
+  left: 300px;
+  animation: waver 3s 1.0s infinite linear;
+  top:490px;
+}
+
+#waveEight {
+  background-color:#e6ffe6;
+  opacity: .5;
+  left: 600px;
+  animation: waver 5s 1.4s infinite linear;
+  top:540px;
+}
+
+#waveNine {
+  background-color:#ffffcc;
+  opacity: .3;
+  left: -300px;
+  animation: waver 3s 0.7s infinite linear;
+  top:400px;
+}
+
+#waveTen {
+  background-color:#D9EBF0;
+  opacity: .5;
+  left: -20px;
+  animation: waver 4s 0.2s infinite linear;
+  top:450px;
+}
+
+#wave1 {
+  background-color:#D9EBF0;
+  opacity: .5;
+  left: -300px;
+  animation: waver 3s 0.1s infinite linear;
+  top:350px;
+}
+
+#wave2 {
+  background-color:#ffffcc;
+  opacity: .5;
+  left: 150px;
+  animation: waver 4s 0.6s infinite linear;
+  top:500px;
+}
+
+#wave3 {
+  background-color:#e6ffe6;
+  opacity: .5;
+  left: 650px;
+  animation: waver 4s 0.2s infinite linear;
+  top:-700px;
+}
+/*header animation*/

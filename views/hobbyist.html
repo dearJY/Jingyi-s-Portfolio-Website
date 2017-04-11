@@ -26,12 +26,14 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!--AOS/animation on scroll-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
 
 <body id="page-top" class="index">
@@ -71,12 +73,15 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container ocean">
+            <div id="wave3" class="waveBox"></div>
+            <div id="wave2" class="waveBox"></div>
+            <div id="wave1" class="waveBox"></div>
             <div class="row">
                 <div class="col-lg-12">
                     <!--img class="img-responsive" src="img/profile.png" alt=""-->
                     <div class="col-sm-1"></div>
-                    <div class="col-sm-8 hello">
+                    <div class="col-sm-8 hello animated pulse">
                         <h1 class="intro-hob">Hobbyist</h1>
                         <hr>
                         <h2 class="intro work"> &nbsp &nbsp &nbsp &nbsp an app simplifies&enhances movie watching experience</h2>
@@ -90,33 +95,33 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center" data-aos="fade-down">
                     <h2 id="design">Design Process</h2>
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">needfinding</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process">Observing and Interviewing people are very good ways to find design oppotunities. Our interviewers
                         told us that they recorded a lot of movies(books, music etc.) that they wanted to watch or review in their memo but finally lost motivation to watch them or even forget about them as the time past by. What a pity people missed those movies they were interested in. We decided to design an app <b>to help users take use of movies they collected.</b></p>
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">storyboards</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process">What problems that our design can solve? Thinking about some real scenarios and drawing 
                         the storyboards, we found that our design could <b>help users make a satisfying decision on what movies to watch when nothing came up in their minds.</b></p>
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">prototype&heuristic evaluation feedback</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process">
                         we started to think about what features could realize our goals and draw paper prototype based on them.<br><br> 
                         <b>Feature 1.</b> users could search movies， classify and save them into movie lists that they have watched("history") or were going to watch("watchlist"); <br><br><b>Feature 2.</b> to take use of movies in these two "repositories", we provided users with features of randomly choosing a movie from "watchlist" or recommending a movie to other users from "history".<br><br>
@@ -125,20 +130,20 @@
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">Wireframe</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process">
                         Using <b>Adobe Comp, Adobe Photoshop and Invision</b> to create our app wireframe. It was a good chance to design and revise the layout of the app on wireframe. We aimed to let users use each features in as few steps as possible.
                     </p>
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">Implementation</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process">Start to make the app real!<br><br>
                         Implement the app using <b>HTML, CSS, JavaScript, Jquery and NodeJS.</b><br><br>
                         URL:<a href="http://hobbyists.herokuapp.com" target="_blank">hobbyists.herokuapp.com</a>
@@ -146,10 +151,10 @@
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">testing</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process"> We asked some friends to use our app in front of us and give us advice(<b>In-person Tests</b>). According
                         to the advice they gave, we used "google analytics" to do <b>A/B Tests</b> for some features, and analyzed the data 
                         based on <b>chi-squared statitics</b>. These testing results helped us optimize the layout, functionalities and asthetic details of our app.
@@ -240,16 +245,16 @@
                         <h3>CONTACT</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-facebook fa-lg"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100010527720480" target="_blank" class="btn-social btn-outline"><i class="fa fa-facebook fa-lg"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-github fa-lg"></i></a>
+                                <a href="https://github.com/dearJY" target="_blank" class="btn-social btn-outline"><i class="fa fa-github fa-lg"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-linkedin fa-lg"></i></a>
+                                <a href="https://www.linkedin.com/in/jingyi-ouyang-a74a1311a/" target="_blank" class="btn-social btn-outline"><i class="fa fa-linkedin fa-lg"></i></a>
                             </li>
                         </ul>
-                        <h3 id="email">j3ouyang@ucsd.edu</h3>
+                        <h3 id="email">jingyi1617@gmail.com</h3>
                     </div>
                 </div>
             </div>
@@ -258,15 +263,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; OYJY Website 2016
+                        Copyright &copy; OYJY Website 2017
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -277,6 +279,14 @@
 
     <!--React-->
     <script src="../output/index.js"></script>
+
+    <!--AOS/animation on scroll-->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+    <script src="../output/header.js"></script>
 
 </body>
 

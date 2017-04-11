@@ -26,13 +26,14 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!--AOS/animation on scroll-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
 
 <body id="page-top" class="index">
@@ -72,12 +73,15 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container ocean">
+            <div id="wave3" class="waveBox"></div>
+            <div id="wave2" class="waveBox"></div>
+            <div id="wave1" class="waveBox"></div>
             <div class="row">
                 <div class="col-lg-12">
                     <!--img class="img-responsive" src="img/profile.png" alt=""-->
                     <div class="col-sm-1"></div>
-                    <div class="col-sm-9 hello">
+                    <div class="col-sm-9 hello animated pulse">
                         <h1 class="intro-hob">UCSD "study abroad" website - wireframe</h1>
                         <hr>
                         <h2 class="intro work">&nbsp &nbsp &nbsp UCSD "study abroad" website with optmized layout and contents</h2>
@@ -91,44 +95,44 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center" data-aos="fade-down">
                     <h2 id="design">Design Process</h2>
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">Interviews&Persona</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process">The goal of making persona is to help designers put themselves in the shoes of a group of users so designers
                         can appreciate those users' needs and goals. We <b>identified three personas</b> that are "students who are thinking about going abroad", "students who have been abroad and returned" and "Parents who want information on study abroad program". <b>For each persona</b>, we
                         <b>interviewed three persons</b> about their concerns about study abroad program and its website.</p>
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">use case table</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process">For different people of different persona, they have their own distinct concerns. We <b>came up with 100 use cases</b> in total about things our three personas might concern, and <b>estimated the importance</b> of each use case to a specific persona. <b>Analyzing this table</b> helped us get to know what things each user type concern most, which was the basis of our redesign. 
                     </p>
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">Competitive analysis</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process"><b>Navigation bars, Main homepage lables and footers</b> are three parts of website users use most. So We <b>chose five "study abroad" websites</b> from different universities and analyzed these three parts. <b>From the result</b>, we found some 
                     items must be taken into account in redesign because almost all the websites had. And some websites has distinct items related to their local culture and policy, which was also a factor we need to be concerned about in redesign.
                     </p>
                 </div>
             </div>
             <div class="row step">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2" data-aos="fade-right">
                     <p class="title">Wireframe</p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <p class="process">
                         Based on results of interviews, use case table analysis and competitive anlysis, we redesigned "study abroad" website of UCSD and made the wireframe using <b>Balsamique</b>.
                     </p>
@@ -218,17 +222,17 @@
                         <h3>CONTACT</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-facebook fa-lg"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100010527720480" target="_blank" class="btn-social btn-outline"><i class="fa fa-facebook fa-lg"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-github fa-lg"></i></a>
+                                <a href="https://github.com/dearJY" target="_blank" class="btn-social btn-outline"><i class="fa fa-github fa-lg"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-linkedin fa-lg"></i></a>
+                                <a href="https://www.linkedin.com/in/jingyi-ouyang-a74a1311a/" target="_blank" class="btn-social btn-outline"><i class="fa fa-linkedin fa-lg"></i></a>
                             </li>
                         
                         </ul>
-                        <h3 id="email">j3ouyang@ucsd.edu</h3>
+                        <h3 id="email">jingyi1617@gmail.com</h3>
                     </div>
                 </div>
             </div>
@@ -237,7 +241,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; OYJY Website 2016
+                        Copyright &copy; OYJY Website 2017
                     </div>
                 </div>
             </div>
@@ -260,7 +264,14 @@
 
     <!--React-->
     <script src="../output/index.js"></script>
+
+    <!--AOS/animation on scroll-->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
     
+    <script src="../output/header.js"></script>
 </body>
 
 </html>
